@@ -9,9 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* 🎨 ADOT DESIGNS THEME UPGRADE */
+    /* 🎨 ADOT DESIGNS THEME (LARGE FONT VERSION) */
 
-    /* Base */
     body {
       font-family: 'Oswald', sans-serif;
       margin: 0;
@@ -20,33 +19,47 @@
       overflow-x: hidden;
     }
 
-    /* Section Layouts */
+    /* Section Layout */
     .section {
-      padding: 80px 40px;
+      padding: 100px 80px;
       transition: all 0.8s ease;
       opacity: 0;
       transform: translateY(40px);
     }
+
     .section:nth-child(even) {
       background: #000;
       color: #fff;
     }
+
     .section:nth-child(odd) {
       background: #fff;
       color: #000;
     }
+
     .section.visible {
       opacity: 1;
       transform: translateY(0);
     }
 
     /* Headings */
-    h1, h2, h3 {
+    h1 {
+      font-size: 64px;
       font-weight: 600;
+      color: #00b140;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 42px;
+      font-weight: 500;
       color: #00b140;
       text-transform: uppercase;
       position: relative;
       display: inline-block;
+      margin-bottom: 30px;
     }
 
     /* Green underline animation */
@@ -54,28 +67,31 @@
       content: "";
       position: absolute;
       width: 0;
-      height: 3px;
-      bottom: -6px;
+      height: 4px;
+      bottom: -8px;
       left: 0;
       background-color: #00b140;
       transition: width 0.5s ease-in-out;
     }
+
     .section.visible h2::after {
       width: 100%;
     }
 
-    /* Logo */
-    .logo {
-      display: block;
-      margin: 40px auto 20px auto;
-      max-width: 180px;
-      border-radius: 8px;
+    /* Paragraphs */
+    p {
+      font-size: 22px;
+      line-height: 1.8;
+      margin: 20px 0;
     }
 
-    /* Centered Intro */
-    .intro {
-      text-align: center;
-      padding-top: 40px;
+    ul {
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
 
     /* Table */
@@ -83,19 +99,37 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
+      font-size: 20px;
     }
+
     .table th, .table td {
-      padding: 12px;
+      padding: 16px;
       border: 1px solid #333;
     }
+
     .table th {
       background-color: #00b140;
       color: #000;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+
+    .table td {
+      color: inherit;
+    }
+
+    /* Logo */
+    .logo {
+      display: block;
+      margin: 40px auto 20px auto;
+      max-width: 220px;
+      border-radius: 10px;
     }
 
     /* Highlights */
     .highlight {
       color: #00b140;
+      font-weight: 600;
     }
 
     /* Footer */
@@ -103,8 +137,8 @@
       background-color: #000;
       text-align: center;
       color: #aaa;
-      padding: 30px;
-      font-size: 14px;
+      padding: 50px 20px;
+      font-size: 18px;
     }
 
     /* Animation Keyframes */
@@ -118,6 +152,25 @@
         transform: translateY(0);
       }
     }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 44px;
+      }
+      h2 {
+        font-size: 32px;
+      }
+      p, li {
+        font-size: 18px;
+      }
+      .table {
+        font-size: 16px;
+      }
+      .section {
+        padding: 60px 20px;
+      }
+    }
   </style>
 </head>
 
@@ -127,7 +180,7 @@
   <section class="section intro visible">
     <img src="IMG_2441.JPG" alt="Adot Logo" class="logo" />
     <h1>🎨 Adot Designs Passive Income Guide</h1>
-    <p style="text-align:center; font-size:18px;">Created by <strong>Andrews Augustin Raj</strong> — Adot Designs 💚</p>
+    <p style="text-align:center; font-size:24px;">Created by <strong>Andrews Augustin Raj</strong> — Adot Designs 💚</p>
   </section>
 
   <!-- Goals -->
@@ -183,7 +236,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Adot Designs | Designed by ADot.💚</p>
+    <p>© 2025 Adot Designs — Passive Income Creative Report | Designed by Andrews Augustin Raj 💚</p>
   </footer>
 
   <!-- Scroll Animation Script -->
@@ -199,6 +252,6 @@
 
     sections.forEach(section => observer.observe(section));
   </script>
+
 </body>
 </html>
-
