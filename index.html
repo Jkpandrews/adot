@@ -9,7 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-   
+    /* 🎨 ADOT DESIGNS MOBILE-FRIENDLY THEME (#2AD525 EDITION) */
+
+    :root {
+      --adot-green: #2ad525;
+    }
 
     body {
       font-family: 'Oswald', sans-serif;
@@ -17,6 +21,7 @@
       padding: 0;
       line-height: 1.6;
       overflow-x: hidden;
+      background: #000;
     }
 
     /* Section Layout */
@@ -44,18 +49,18 @@
 
     /* Headings */
     h1 {
-      font-size: 64px;
+      font-size: 58px;
       font-weight: 600;
-      color: #00b140;
+      color: var(--adot-green);
       text-align: center;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 42px;
+      font-size: 38px;
       font-weight: 500;
-      color: #00b140;
+      color: var(--adot-green);
       text-transform: uppercase;
       position: relative;
       display: inline-block;
@@ -67,10 +72,10 @@
       content: "";
       position: absolute;
       width: 0;
-      height: 4px;
+      height: 3px;
       bottom: -8px;
       left: 0;
-      background-color: #00b140;
+      background-color: var(--adot-green);
       transition: width 0.5s ease-in-out;
     }
 
@@ -78,16 +83,14 @@
       width: 100%;
     }
 
-    /* Paragraphs */
-    p {
-      font-size: 28px;
+    /* Text styling */
+    p, ul, li {
+      font-size: 20px;
       line-height: 1.8;
-      margin: 20px 0;
     }
 
     ul {
-      font-size: 28px;
-      line-height: 1.8;
+      padding-left: 20px;
     }
 
     li {
@@ -99,36 +102,36 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
-      font-size: 20px;
+      font-size: 18px;
+      overflow-x: auto;
+      display: block;
     }
 
     .table th, .table td {
-      padding: 16px;
+      padding: 14px;
       border: 1px solid #333;
+      text-align: left;
+      white-space: nowrap;
     }
 
     .table th {
-      background-color: #00b140;
+      background-color: var(--adot-green);
       color: #000;
-      font-size: 22px;
+      font-size: 20px;
       text-transform: uppercase;
-    }
-
-    .table td {
-      color: inherit;
     }
 
     /* Logo */
     .logo {
       display: block;
       margin: 40px auto 20px auto;
-      max-width: 220px;
+      max-width: 200px;
       border-radius: 10px;
     }
 
     /* Highlights */
     .highlight {
-      color: #00b140;
+      color: var(--adot-green);
       font-weight: 600;
     }
 
@@ -137,38 +140,69 @@
       background-color: #000;
       text-align: center;
       color: #aaa;
-      padding: 50px 20px;
-      font-size: 18px;
+      padding: 40px 20px;
+      font-size: 16px;
     }
 
-    /* Animation Keyframes */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+    /* Responsive Adjustments */
+    @media (max-width: 1024px) {
+      .section {
+        padding: 80px 40px;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
       h1 {
-        font-size: 44px;
+        font-size: 48px;
       }
       h2 {
-        font-size: 38px;
+        font-size: 34px;
       }
-      p, li {
-        font-size: 30px;
+      p, ul, li {
+        font-size: 18px;
       }
       .table {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 60px 25px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
         font-size: 30px;
       }
+      p, li {
+        font-size: 17px;
+      }
+      .table {
+        font-size: 15px;
+      }
+      .table th, .table td {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 32px;
+        line-height: 1.3;
+      }
+      h2 {
+        font-size: 26px;
+      }
+      p, li {
+        font-size: 16px;
+      }
       .section {
-        padding: 60px 20px;
+        padding: 50px 20px;
+      }
+      .logo {
+        max-width: 160px;
+      }
+      footer {
+        font-size: 14px;
       }
     }
   </style>
@@ -179,28 +213,30 @@
   <!-- Header Section -->
   <section class="section intro visible">
     <img src="IMG_2441.JPG" alt="Adot Logo" class="logo" />
-    <h1>Adot Designs Passive Income Guide</h1>
-    <p style="text-align:center; font-size:24px;">Created by ADot Designs 💚</p>
+    <h1>🎨 Adot Designs Passive Income Guide</h1>
+    <p style="text-align:center; font-size:22px;">Created by <strong>Andrews Augustin Raj</strong> — Adot Designs 🌿</p>
   </section>
 
   <!-- Goals -->
   <section class="section">
-    <h2>GOALS</h2>
+    <h2>🎯 Goals</h2>
     <p>Earn consistent passive income (Rs.20K/month) using only <span class="highlight">Photoshop</span> and <span class="highlight">Illustrator</span> — no direct selling or clients required. Create once, upload, and earn forever!</p>
   </section>
 
   <!-- Best Websites -->
   <section class="section">
-    <h2>BEST WEBSITES TO SELL DESIGNS</h2>
-    <table class="table">
-      <tr><th>Platform</th><th>Rating</th><th>Potential Income</th><th>Why It Works</th></tr>
-      <tr><td>Creative Market</td><td>⭐⭐⭐⭐⭐</td><td>Rs.10K–50K/month</td><td>Premium marketplace for templates & fonts.</td></tr>
-      <tr><td>Design Bundles</td><td>⭐⭐⭐⭐</td><td>Rs.5K–30K/month</td><td>Easy uploads and great traffic for beginners.</td></tr>
-      <tr><td>Etsy (Digital Files)</td><td>⭐⭐⭐⭐</td><td>Rs.5K–25K/month</td><td>Automatic delivery and global reach.</td></tr>
-      <tr><td>Gumroad</td><td>⭐⭐⭐⭐</td><td>Rs.3K–15K/month</td><td>No approval, instant payouts, easy setup.</td></tr>
-      <tr><td>Adobe Stock</td><td>⭐⭐⭐</td><td>Rs.2K–10K/month</td><td>Trusted brand for stock graphics.</td></tr>
-      <tr><td>Freepik Contributor</td><td>⭐⭐⭐</td><td>Rs.2K–8K/month</td><td>Steady downloads and global exposure.</td></tr>
-    </table>
+    <h2>🏆 Best Websites to Sell Designs</h2>
+    <div style="overflow-x:auto;">
+      <table class="table">
+        <tr><th>Platform</th><th>Rating</th><th>Potential Income</th><th>Why It Works</th></tr>
+        <tr><td>Creative Market</td><td>⭐⭐⭐⭐⭐</td><td>Rs.10K–50K/month</td><td>Premium marketplace for templates & fonts.</td></tr>
+        <tr><td>Design Bundles</td><td>⭐⭐⭐⭐</td><td>Rs.5K–30K/month</td><td>Easy uploads and great traffic for beginners.</td></tr>
+        <tr><td>Etsy (Digital Files)</td><td>⭐⭐⭐⭐</td><td>Rs.5K–25K/month</td><td>Automatic delivery and global reach.</td></tr>
+        <tr><td>Gumroad</td><td>⭐⭐⭐⭐</td><td>Rs.3K–15K/month</td><td>No approval, instant payouts, easy setup.</td></tr>
+        <tr><td>Adobe Stock</td><td>⭐⭐⭐</td><td>Rs.2K–10K/month</td><td>Trusted brand for stock graphics.</td></tr>
+        <tr><td>Freepik Contributor</td><td>⭐⭐⭐</td><td>Rs.2K–8K/month</td><td>Steady downloads and global exposure.</td></tr>
+      </table>
+    </div>
   </section>
 
   <!-- Earning Overview -->
@@ -224,7 +260,7 @@
 
   <!-- Pro Tips -->
   <section class="section">
-    <h2>Pro Tips</h2>
+    <h2>💡 Pro Tips</h2>
     <ul>
       <li>Use editable PSD & AI files.</li>
       <li>Present with mockups (<span class="highlight">placeit.net</span> / <span class="highlight">mockupworld.co</span>).</li>
@@ -236,7 +272,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Adot Designs | Designed by ADot.💚</p>
+    <p>© 2025 Adot Designs — Passive Income Creative Report | Designed by Andrews Augustin Raj 🌿</p>
   </footer>
 
   <!-- Scroll Animation Script -->
@@ -249,9 +285,7 @@
         }
       });
     }, { threshold: 0.2 });
-
     sections.forEach(section => observer.observe(section));
   </script>
-
 </body>
 </html>
