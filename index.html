@@ -98,21 +98,21 @@
       margin-bottom: 10px;
     }
 
-    /* ✅ Table */
+    /* Table */
     .table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
       font-size: 28px;
-      display: table;
-      table-layout: fixed;
+      overflow-x: auto;
+      display: block;
     }
 
     .table th, .table td {
       padding: 16px;
       border: 1px solid #333;
       text-align: left;
-      word-wrap: break-word;
+      white-space: nowrap;
     }
 
     .table th {
@@ -176,7 +176,7 @@
         font-size: 28px;
       }
       .table {
-        font-size: 26px;
+        font-size: 28px;
       }
     }
 
@@ -191,15 +191,13 @@
         font-size: 30px;
       }
       p, li {
-        font-size: 26px;
+        font-size: 28px;
       }
       .table {
-        font-size: 24px;
-        display: block;
-        overflow-x: auto;
+        font-size: 28px;
       }
       .table th, .table td {
-        padding: 20px;
+        padding: 28px;
       }
       .logo {
         max-width: 180px;
@@ -215,21 +213,19 @@
         line-height: 1.3;
       }
       h2 {
-        font-size: 28px;
+        font-size: 32px;
       }
       p, li {
-        font-size: 22px;
+        font-size: 28px;
       }
       .table {
-        font-size: 22px;
-        display: block;
-        overflow-x: auto;
+        font-size: 28px;
       }
       .logo {
         max-width: 150px;
       }
       footer {
-        font-size: 18px;
+        font-size: 15px;
       }
     }
   </style>
@@ -253,15 +249,17 @@
   <!-- Best Websites -->
   <section class="section">
     <h2>BEST WEBSITES TO SELL DESIGNS</h2>
-    <table class="table">
-      <tr><th>Platform</th><th>Rating</th><th>Potential Income</th><th>Why It Works</th></tr>
-      <tr><td>Creative Market</td><td>⭐⭐⭐⭐⭐</td><td>Rs.10K–50K/month</td><td>Premium marketplace for templates & fonts.</td></tr>
-      <tr><td>Design Bundles</td><td>⭐⭐⭐⭐</td><td>Rs.5K–30K/month</td><td>Easy uploads and great traffic for beginners.</td></tr>
-      <tr><td>Etsy (Digital Files)</td><td>⭐⭐⭐⭐</td><td>Rs.5K–25K/month</td><td>Automatic delivery and global reach.</td></tr>
-      <tr><td>Gumroad</td><td>⭐⭐⭐⭐</td><td>Rs.3K–15K/month</td><td>No approval, instant payouts, easy setup.</td></tr>
-      <tr><td>Adobe Stock</td><td>⭐⭐⭐</td><td>Rs.2K–10K/month</td><td>Trusted brand for stock graphics.</td></tr>
-      <tr><td>Freepik Contributor</td><td>⭐⭐⭐</td><td>Rs.2K–8K/month</td><td>Steady downloads and global exposure.</td></tr>
-    </table>
+    <div style="overflow-x:auto;">
+      <table class="table">
+        <tr><th>Platform</th><th>Rating</th><th>Potential Income</th><th>Why It Works</th></tr>
+        <tr><td>Creative Market</td><td>⭐⭐⭐⭐⭐</td><td>Rs.10K–50K/month</td><td>Premium marketplace for templates & fonts.</td></tr>
+        <tr><td>Design Bundles</td><td>⭐⭐⭐⭐</td><td>Rs.5K–30K/month</td><td>Easy uploads and great traffic for beginners.</td></tr>
+        <tr><td>Etsy (Digital Files)</td><td>⭐⭐⭐⭐</td><td>Rs.5K–25K/month</td><td>Automatic delivery and global reach.</td></tr>
+        <tr><td>Gumroad</td><td>⭐⭐⭐⭐</td><td>Rs.3K–15K/month</td><td>No approval, instant payouts, easy setup.</td></tr>
+        <tr><td>Adobe Stock</td><td>⭐⭐⭐</td><td>Rs.2K–10K/month</td><td>Trusted brand for stock graphics.</td></tr>
+        <tr><td>Freepik Contributor</td><td>⭐⭐⭐</td><td>Rs.2K–8K/month</td><td>Steady downloads and global exposure.</td></tr>
+      </table>
+    </div>
   </section>
 
   <!-- Earning Overview -->
