@@ -1,69 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Adot Designs Passive Income Guide</title>
-<style>
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 40px;
-    line-height: 1.6;
-  }
-  h1, h2, h3 {
-    color: #00b140;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .logo {
-    display: block;
-    margin: 0 auto 20px auto;
-    max-width: 180px;
-    border-radius: 8px;
-  }
-  .section {
-    margin-top: 40px;
-  }
-  .highlight {
-    color: #00b140;
-  }
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  .table th, .table td {
-    border: 1px solid #333;
-    padding: 10px;
-  }
-  .table th {
-    background-color: #00b140;
-    color: #000;
-  }
-  footer {
-    text-align: center;
-    margin-top: 60px;
-    font-size: 14px;
-    color: #aaa;
-  }
-</style>
-</head>
-<body>
-  <img src="IMG_2441.JPG" alt="Adot Logo" class="logo" />
-  <h1>🎨 Adot Designs Passive Income Guide</h1>
-  <p style="text-align:center;">Created by <strong>Andrews Augustin Raj</strong> — Adot Designs 💚</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adot Designs Passive Income Guide</title>
 
-  <div class="section">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* 🎨 ADOT DESIGNS THEME UPGRADE */
+
+    /* Base */
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Section Layouts */
+    .section {
+      padding: 80px 40px;
+      transition: all 0.8s ease;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .section:nth-child(even) {
+      background: #000;
+      color: #fff;
+    }
+    .section:nth-child(odd) {
+      background: #fff;
+      color: #000;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+      font-weight: 600;
+      color: #00b140;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Green underline animation */
+    h2::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -6px;
+      left: 0;
+      background-color: #00b140;
+      transition: width 0.5s ease-in-out;
+    }
+    .section.visible h2::after {
+      width: 100%;
+    }
+
+    /* Logo */
+    .logo {
+      display: block;
+      margin: 40px auto 20px auto;
+      max-width: 180px;
+      border-radius: 8px;
+    }
+
+    /* Centered Intro */
+    .intro {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    /* Table */
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .table th, .table td {
+      padding: 12px;
+      border: 1px solid #333;
+    }
+    .table th {
+      background-color: #00b140;
+      color: #000;
+    }
+
+    /* Highlights */
+    .highlight {
+      color: #00b140;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      text-align: center;
+      color: #aaa;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <section class="section intro visible">
+    <img src="IMG_2441.JPG" alt="Adot Logo" class="logo" />
+    <h1>🎨 Adot Designs Passive Income Guide</h1>
+    <p style="text-align:center; font-size:18px;">Created by <strong>Andrews Augustin Raj</strong> — Adot Designs 💚</p>
+  </section>
+
+  <!-- Goals -->
+  <section class="section">
     <h2>🎯 Goals</h2>
     <p>Earn consistent passive income (Rs.20K/month) using only <span class="highlight">Photoshop</span> and <span class="highlight">Illustrator</span> — no direct selling or clients required. Create once, upload, and earn forever!</p>
-  </div>
+  </section>
 
-  <div class="section">
+  <!-- Best Websites -->
+  <section class="section">
     <h2>🏆 Best Websites to Sell Designs</h2>
     <table class="table">
       <tr><th>Platform</th><th>Rating</th><th>Potential Income</th><th>Why It Works</th></tr>
@@ -74,9 +148,10 @@
       <tr><td>Adobe Stock</td><td>⭐⭐⭐</td><td>Rs.2K–10K/month</td><td>Trusted brand for stock graphics.</td></tr>
       <tr><td>Freepik Contributor</td><td>⭐⭐⭐</td><td>Rs.2K–8K/month</td><td>Steady downloads and global exposure.</td></tr>
     </table>
-  </div>
+  </section>
 
-  <div class="section">
+  <!-- Earning Overview -->
+  <section class="section">
     <h2>💰 Earning Potential Overview</h2>
     <ul>
       <li><span class="highlight">Creative Market</span>: Rs.10K–50K/month (high-quality buyers)</li>
@@ -84,16 +159,18 @@
       <li><span class="highlight">Etsy</span>: Rs.5K–25K/month (auto sales)</li>
       <li><span class="highlight">Gumroad</span>: Rs.3K–15K/month (no approval)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <!-- Roadmap -->
+  <section class="section">
     <h2>📈 Roadmap to Rs.20K/month</h2>
     <p><strong>Month 1–2:</strong> Upload 10–15 poster & Instagram templates on Design Bundles + Gumroad.</p>
     <p><strong>Month 3–4:</strong> Apply for Creative Market and add premium Tamil/Indian templates.</p>
     <p><strong>Month 5–6:</strong> Upload vectors to Freepik + Adobe Stock, then bundle on Etsy.</p>
-  </div>
+  </section>
 
-  <div class="section">
+  <!-- Pro Tips -->
+  <section class="section">
     <h2>💡 Pro Tips</h2>
     <ul>
       <li>Use editable PSD & AI files.</li>
@@ -102,10 +179,26 @@
       <li>Post previews on <span class="highlight">Pinterest</span> & <span class="highlight">Behance</span>.</li>
       <li>Create bundles every few months for better value.</li>
     </ul>
-  </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Adot Designs — Passive Income Creative Report | Designed by Andrews Augustin Raj 💚</p>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
+
